@@ -1,0 +1,398 @@
+
+==================== FINAL INTERFACE ====================
+2016-03-23 01:11:15.939641 UTC
+
+interface Haske_IqRbGVSe4mC4nH11WCsm81:Lib 7103
+  interface hash: d4ea5f48e87fcf742a9448de4ddba8b8
+  ABI hash: 4e87f4200f7b56cf9ee78ce08e669d38
+  export-list hash: 75dd64bc839e63b34552098a144665ef
+  orphan hash: 9751f3f39622f9167527d0b8c72071df
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.problemEight
+  Lib.problemEleven
+  Lib.problemFive
+  Lib.problemFour
+  Lib.problemNine
+  Lib.problemOne
+  Lib.problemSeven
+  Lib.problemSix
+  Lib.problemThree
+  Lib.problemTwo
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 split-0.2.3@split_CDzOynTh4l8Ahg1HaWUL4Z
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Float e532d434ec2447d809887c0fca1d78a5
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:Text.Read ef0ef92fb7358ae94bab089940adfd2a
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 371e90fe753f08ddedf0d2657a9ef5c4
+import  -/  split-0.2.3@split_CDzOynTh4l8Ahg1HaWUL4Z:Data.List.Split.Internals 963ae3cccb2c92e36d269de482ab8341
+4cb1cb1cb98683a9835670d1a040c459
+  $sread :: GHC.Base.String -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ s :: GHC.Base.String ->
+                 case Text.Read.readEither
+                        @ GHC.Integer.Type.Integer
+                        GHC.Read.$fReadInteger
+                        s of wild {
+                   Data.Either.Left x -> GHC.Err.error @ GHC.Integer.Type.Integer x
+                   Data.Either.Right y -> y }) -}
+ff2459b8cf5b9326e4764e44f16a3df2
+  $wgo ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Prim.Int#
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+  {- Arity: 3, Strictness: <S,1*U><L,1*U><L,U>, Inline: [0] -}
+f81001d7e26d7e29a1ca928bb5ce493a
+  $wgo1 ::
+    [[GHC.Types.Char]] -> GHC.Prim.Int# -> [GHC.Integer.Type.Integer]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+4f62356a75a795d020e7578965a13ed7
+  fibs :: [GHC.Integer.Type.Integer]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.problemFive6
+                   Lib.problemTwo1) -}
+f73c982d6f7056e9074a48ce29c79c8b
+  maxProduct ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+1417d2a3e19499fb2869906c7eca138c
+  problemEight :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.maxProduct
+                   Lib.problemEight6
+                   Lib.problemEight1) -}
+4dcdb39f67db21dd710ba33e457400a4
+  problemEight1 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.$wgo
+                   Lib.problemEight_parsedDigits
+                   13
+                   Lib.problemEight2) -}
+762baf66f72dfeee63da6ac705a5b02b
+  problemEight2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+d83e3460072b7c6928f9afa010eeb607
+  problemEight3 :: [[GHC.Types.Char]]
+  {- Unfolding: (Data.List.Split.Internals.chunksOf
+                   @ GHC.Types.Char
+                   Lib.problemEight5
+                   Lib.problemEight4) -}
+bacab4021e5bd054610c27a9d5ecbfce
+  problemEight4 :: [GHC.Types.Char]
+316f1a36655c1cb113036dc203495a32
+  problemEight5 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1) -}
+19be79afd9b646ed6e9b61e19e851be3
+  problemEight6 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (case Lib.problemEight_parsedDigits of wild {
+                   [] -> GHC.List.scanl2 @ GHC.Integer.Type.Integer
+                   : ds1 xs -> xs }) -}
+7e5de7a5c8b409065170f3e08d5b3fde
+  problemEight_parsedDigits :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ GHC.Integer.Type.Integer
+                   Lib.$sread
+                   Lib.problemEight3) -}
+79868d205ed1643a0001c242cf9703aa
+  problemEleven :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.List.strictMaximum
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   Lib.problemEleven1) -}
+796dd3ad919b069efd1419ce6b10c69c
+  problemEleven1 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.problemEleven2
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+d535eca11553b19e90a17522eba3bac7
+  problemEleven2 :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.List.strictMaximum
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   Lib.problemEleven3) -}
+ca7cf40eb1abd24ac6d96491378d750b
+  problemEleven3 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Lib.$wgo1 Lib.problemEleven4 30000) -}
+c90405e595c5393d1f5bbcc8122d1524
+  problemEleven4 :: [[GHC.Types.Char]]
+  {- Unfolding: (Lib.problemEleven6 Lib.problemEleven5) -}
+0412fb5461c3895c8e16f447edffcea7
+  problemEleven5 :: [GHC.Types.Char]
+2a781127a746bd544e85befbd4f509f8
+  problemEleven6 :: [GHC.Types.Char] -> [[GHC.Types.Char]]
+  {- Unfolding: (Data.List.Split.Internals.splitOn
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Lib.problemEleven7) -}
+9ba345bcfd4fd1f0f18b47c267cf3d0d
+  problemEleven7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
+666dc6f32ea4bbc905ae27da1815fe67
+  problemFive :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Enum.enumDeltaIntegerFB
+                   @ GHC.Integer.Type.Integer
+                   Lib.problemFive2
+                   Lib.problemFive1
+                   Lib.problemEight2) -}
+baf6d2f268410ebeca7d6a8f70a850f2
+  problemFive1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 21) -}
+225bea2f4dd05c198b9e0e84e2b162e3
+  problemFive2 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2,
+     Unfolding: (\ x :: GHC.Integer.Type.Integer
+                   r :: GHC.Integer.Type.Integer[OneShot] ->
+                 letrec {
+                   go3 :: [GHC.Integer.Type.Integer] -> Data.Monoid.All
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds1 :: [GHC.Integer.Type.Integer] ->
+                     case ds1 of wild {
+                       [] -> GHC.Types.True `cast` (Sym (Data.Monoid.NTCo:All[0]))
+                       : y ys
+                       -> case GHC.Integer.Type.eqInteger#
+                                 y
+                                 Lib.problemFive6 of wild1 { DEFAULT ->
+                          case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                            GHC.Types.False
+                            -> case GHC.Integer.Type.eqInteger#
+                                      (GHC.Integer.Type.modInteger x y)
+                                      Lib.problemFive6 of wild3 { DEFAULT ->
+                               case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild3 of wild4 {
+                                 GHC.Types.False
+                                 -> GHC.Types.False `cast` (Sym (Data.Monoid.NTCo:All[0]))
+                                 GHC.Types.True -> go3 ys } }
+                            GHC.Types.True
+                            -> case GHC.Real.divZeroError ret_ty Data.Monoid.All of {} } } }
+                 } in
+                 case (go3 Lib.problemFive3)
+                        `cast`
+                      (Data.Monoid.NTCo:All[0]) of wild {
+                   GHC.Types.False -> r GHC.Types.True -> x }) -}
+27352c010e5f8ad61be4d8fb9e7cbecb
+  problemFive3 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Enum.enumDeltaToInteger
+                   Lib.problemFive5
+                   Lib.problemEight2
+                   Lib.problemFive4) -}
+3fe80b67c35a99a57af8eaea289c65e8
+  problemFive4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 20) -}
+2e73004d92a26838c1f5db413dee41d4
+  problemFive5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 2) -}
+2e7aae575a201323e01e9c13add422f6
+  problemFive6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+1ed08a8dfc18e40016f96fdf8083af5b
+  problemFour :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.List.strictMaximum
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   Lib.problemFour1) -}
+e77ab3912be740d394c40cce1fe0feb6
+  problemFour1 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Lib.problemFour_go Lib.problemFour_lim) -}
+bf7a85c2ab28c876590a52a74f0e3a1f
+  problemFour_go ::
+    GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1, Strictness: <S,U> -}
+53f0012e0f8a87d599991667ce85055b
+  problemFour_lim :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 100) -}
+9a5b1207d214e48d4aca8e5b89970425
+  problemNine :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Integer.Type.timesInteger
+                   Lib.problemNine5
+                   Lib.problemNine1) -}
+56d662c8cf34f8a864c08b9ccbfad250
+  problemNine1 :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Integer.Type.minusInteger
+                   Lib.problemNine3
+                   Lib.problemNine_b) -}
+61e9effbd89ffcaf7e100fea9a3484fa
+  problemNine2 ::
+    (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- Unfolding: (Lib.problemNine_go Lib.problemEight2) -}
+c4e3998908f940e84278e489276fbb00
+  problemNine3 :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Integer.Type.minusInteger
+                   Lib.problemNine4
+                   Lib.problemNine_a) -}
+3f84b4a666f891cf31a431cda5e08d32
+  problemNine4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1000) -}
+a83e41c0e8b24b7f62eadd79de04e4e7
+  problemNine5 :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Integer.Type.timesInteger
+                   Lib.problemNine_a
+                   Lib.problemNine_b) -}
+1cfd45c821ba0db2fc3e50d004c749c5
+  problemNine_a :: GHC.Integer.Type.Integer
+  {- Unfolding: (case Lib.problemNine2 of wild { (,) a2 b -> a2 }) -}
+65ca8af7de251a27c6888a8f32954db0
+  problemNine_b :: GHC.Integer.Type.Integer
+  {- Unfolding: (case Lib.problemNine2 of wild { (,) a2 b -> b }) -}
+8a63cd3b6897e8566d8b61995a276052
+  problemNine_go ::
+    GHC.Integer.Type.Integer
+    -> (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- Arity: 1, Strictness: <S,U> -}
+2edde0d00e436a86c4bf2a9367a9ae34
+  problemOne :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.problemOne_go
+                   Lib.problemEight2
+                   Lib.problemFive6) -}
+6f0e7b64144af46e730498a76c814cb0
+  problemOne_go ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+7c5baeea7b5d7dd6b76d43705f8f6104
+  problemSeven :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.problemSeven2
+                   Lib.problemSeven1
+                   (GHC.List.lastError @ GHC.Integer.Type.Integer)) -}
+92cbab2c254592fb4a6f07190f1a2066
+  problemSeven1 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 10001) -}
+6043bb8e7683e06e905973c042c5a1d4
+  problemSeven2 ::
+    GHC.Types.Int
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Enum.enumDeltaIntegerFB
+                   @ (GHC.Types.Int
+                      -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                   Lib.problemSeven3
+                   Lib.problemFive5
+                   Lib.problemEight2) -}
+95504e6085683edf0bb802463857f56c
+  problemSeven3 ::
+    GHC.Integer.Type.Integer
+    -> (GHC.Types.Int
+        -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+    -> GHC.Types.Int
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+  {- Arity: 2,
+     Unfolding: (\ x :: GHC.Integer.Type.Integer
+                   r :: GHC.Types.Int
+                        -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer[OneShot] ->
+                 letrec {
+                   go3 :: [GHC.Integer.Type.Integer] -> Data.Monoid.All
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds1 :: [GHC.Integer.Type.Integer] ->
+                     case ds1 of wild {
+                       [] -> GHC.Types.True `cast` (Sym (Data.Monoid.NTCo:All[0]))
+                       : y ys
+                       -> case GHC.Integer.Type.eqInteger#
+                                 y
+                                 Lib.problemFive6 of wild1 { DEFAULT ->
+                          case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                            GHC.Types.False
+                            -> case GHC.Integer.Type.neqInteger#
+                                      (GHC.Integer.Type.modInteger x y)
+                                      Lib.problemFive6 of wild3 { DEFAULT ->
+                               case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild3 of wild4 {
+                                 GHC.Types.False
+                                 -> GHC.Types.False `cast` (Sym (Data.Monoid.NTCo:All[0]))
+                                 GHC.Types.True -> go3 ys } }
+                            GHC.Types.True
+                            -> case GHC.Real.divZeroError ret_ty Data.Monoid.All of {} } } }
+                 } in
+                 case (go3
+                         (GHC.Enum.enumDeltaToInteger
+                            Lib.problemFive5
+                            Lib.problemEight2
+                            (GHC.Integer.Type.minusInteger x Lib.problemEight2)))
+                        `cast`
+                      (Data.Monoid.NTCo:All[0]) of wild {
+                   GHC.Types.False -> r
+                   GHC.Types.True
+                   -> \ m :: GHC.Types.Int eta :: GHC.Integer.Type.Integer ->
+                      case m of wild1 { GHC.Types.I# ds1 ->
+                      case ds1 of ds2 {
+                        DEFAULT -> r (GHC.Types.I# (GHC.Prim.-# ds2 1)) x 1 -> x } } }) -}
+8f1d4063c2e3a9c2c09e16da8b2aba4a
+  problemSix :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Integer.Type.minusInteger
+                   Lib.problemSix2
+                   Lib.problemSix1) -}
+b743154ea2d182d3f5710e24831d2900
+  problemSix1 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.problemSix_go
+                   Lib.problemEight2
+                   Lib.problemFive6) -}
+bbbf82cb13dc3fe9e1a58c2e32530c4e
+  problemSix2 :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Integer.Type.timesInteger
+                   Lib.problemSix_x
+                   Lib.problemSix_x) -}
+c4c1787818c38f9b3dbfbabcf1c1d304
+  problemSix_go ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+3d97c050a21fa0a7c2442bb02ad3104d
+  problemSix_go1 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+63bebb404ad09d8a03ef0b045f417e05
+  problemSix_x :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.problemSix_go1
+                   Lib.problemEight2
+                   Lib.problemFive6) -}
+b56354d90d2a337b6c740bf78e371df1
+  problemThree :: GHC.Integer.Type.Integer
+c36e569c4c4a85c303088d5ff20954e5
+  problemTwo :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.problemTwo_go Lib.fibs Lib.problemFive6) -}
+bafbaa9383f5de466b8753173abb9d1c
+  problemTwo1 :: [GHC.Integer.Type.Integer]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Lib.problemEight2
+                   Lib.problemTwo2) -}
+1245de412003cfbfd568e11dd0fd61ac
+  problemTwo2 :: [GHC.Integer.Type.Integer]
+e37cbe4512cfa4179fccee2d73c91e25
+  problemTwo_go ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+"SPEC/Lib read @ Integer" [ALWAYS] forall $dRead :: GHC.Read.Read
+                                                      GHC.Integer.Type.Integer
+  Text.Read.read @ GHC.Integer.Type.Integer $dRead = Lib.$sread
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
